@@ -1,0 +1,136 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  background-color: #4666d1;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    height: 70px; /* Set the height to 70px */
+    line-height: 70px; /* Align the content vertically */
+    padding: 0; 
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Main Content Styles */
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; /* Ensure the page fills the height of the viewport */
+}
+
+#cart-items {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  flex-grow: 1; /* Allow this section to take up remaining space */
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+
+.cart-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #007BFF;
+}
+
+.cart-item p {
+  margin: 0;
+}
+
+#cart-summary {
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  margin-bottom: 3px; /* Reduced margin to 3px */
+}
+
+#cart-summary p {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#checkout-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: center;
+}
+
+#checkout-button:hover {
+  background-color: #0056b3;
+}
+
+#checkout-button {
+  background-color: #4666d1;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-top: 2px; /* Added margin-top to ensure a small gap */
+}
+
+#checkout-button:hover {
+  background-color: #7fb8f4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #cart-summary {
+    text-align: left;
+  }
+  
+  #checkout-button {
+    width: auto;
+  }
+}

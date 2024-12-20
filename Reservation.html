@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation Form</title>
+    <link rel="stylesheet" href="Style/rstyle.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+        <header>
+            <div class="container">
+                <div class="lnb_logo">
+                    <img src="images/logo_update.png" alt="logo here">
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html" class="active">Reservation</a></li>
+                        <li><a href="about.html" >About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </header>
+
+    <!-- Reservation Form -->
+    <form class="reservation-form" method="post" action="https://script.google.com/macros/s/AKfycbxtPECom9qWDgTxRudzY2utw-xnXnM8m0Wk5r_lnuw/dev" id="reservationForm">
+        <h1>Restaurant Reservation</h1>
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" placeholder="Enter number of guests" required>
+        </div>
+        <div class="form-group">
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" name="requests" rows="4" placeholder="Enter any special requests"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Submit Reservation</button>
+        </div>
+    </form>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Epicure's Escape</h4>
+    <p>At Epicure's Escape, we bring you an exquisite dining experience, blending global flavors with local touches. From freshly sourced ingredients to a warm ambiance, we aim to make every meal unforgettable.</p>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/draculanaim"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/draculanaim/"><i class="fab fa-instagram"></i></a>
+      </div>
+            </div>
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <p>Monday: 08:00 - 22:00</p>
+                <p>Tuesday: 08:00 - 22:00</p>
+                <p>Wednesday: 08:00 - 22:00</p>
+                <p>Thursday: 08:00 - 22:00</p>
+                <p>Friday: 08:00 - 22:00</p>
+                <p>Saturday: 08:00 - 22:00</p>
+                <p>Sunday: 08:00 - 22:00</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Information</h3>
+                <p>017 Olipara Rd,Joar Shahara<br>Dhaka 1212</p>
+                <p>+88017223846382</p>
+                <p>info@epicuresescape.com</p>
+                <p>epicuresescape@email.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter to receive updates on our latest menu, special offers, and exclusive events.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="footer-bottom">
+            <p>Copyright &copy;2024 All rights reserved | This template is made with <i class="fa fa-heart"></i> by Colorlib</p>
+        </div> -->
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    
+    <script src="database.js"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-nav');
+            menu.classList.toggle('hidden');
+        }
+        </script>
+</body>
+</html>

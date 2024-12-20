@@ -1,0 +1,271 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Gentium Book Basic', serif, 'Lato', sans-serif, 'Yeseva One', cursive;
+  margin: 0;
+  padding: 0;
+  background-image: url('/images/about-bg-pattern.png'); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  background-position: center; /* Centers the image */
+  /* Soft beige background */
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #4666d1;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    height: 70px; /* Set the height to 70px */
+    line-height: 70px; /* Align the content vertically */
+    padding: 0; 
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.lnb_logo {
+  float: left;
+  margin-left: 10px;
+}
+
+.lnb_logo img {
+  display: block;
+  max-width: 150px;
+  height: auto;
+}
+
+.lnb_head img {
+  height: 28px;
+  width: 200px;
+  margin-top: 12px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  border-bottom: 2px solid #fff;
+}
+
+main {
+  padding: 2rem;
+}
+
+.brand-story .content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.brand-story .content .text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.brand-story .content .text h2 {
+  font-size: 2.5rem;
+  color: #4666d1;
+  margin-bottom: 1rem;
+}
+
+.brand-story .content .image {
+  flex: 1;
+}
+
+.brand-story .content .image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team {
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  color: #4666d1;
+  margin-bottom: 1rem;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  width: 170px;
+  transition: transform 0.3s, box-shadow 0.3s, border-radius 0.3s;
+}
+
+.team-member .image-container {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: border-radius 0.3s;
+}
+
+.team-member .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: border-radius 0.3s;
+}
+
+.team-member:hover .image-container {
+  border-radius: 8px;
+}
+
+.team-member:hover .image-container img {
+  border-radius: 0;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+.team-member p:last-child {
+  display: none;
+}
+
+.team-member:hover p:last-child {
+  display: block;
+  color: #666;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 20px;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-column p {
+  margin: 10px 0;
+  color: #d7d7d7;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-column form {
+  display: flex;
+}
+
+.footer-column input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 70%;
+}
+
+.footer-column button {
+  padding: 10px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  width: 30%;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-bottom i {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
